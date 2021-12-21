@@ -9,7 +9,7 @@ export const HeroCard = ({
     characters
 }) => {
 
-    const imagePath = `/assets/${id}.jpg`;
+    const imagePath = `${process.env.PUBLIC_URL}/assets/${id}.jpg`;
 
     return (
         <Link className='cards-link' to={`/hero/${id}`}>
