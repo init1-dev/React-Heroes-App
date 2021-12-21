@@ -1,0 +1,17 @@
+.cards-link {
+  color: black;
+  text-decoration: none;
+}
+
+.card {
+    box-shadow: 0.1rem 0.1rem 0.1rem #aaa;
+    transition: all 0.5s;
+    border: 1px solid grey;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .card:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0.5rem 0.5rem 0.5rem #aaa;
+  }
