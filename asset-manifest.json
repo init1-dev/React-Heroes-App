@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/React-Heroes-App/static/css/main.3e19605a.css",
-    "main.js": "/React-Heroes-App/static/js/main.1cda3733.js",
+    "main.css": "/React-Heroes-App/static/css/main.5097d631.css",
+    "main.js": "/React-Heroes-App/static/js/main.8d8d1e81.js",
     "index.html": "/React-Heroes-App/index.html",
-    "main.3e19605a.css.map": "/React-Heroes-App/static/css/main.3e19605a.css.map",
-    "main.1cda3733.js.map": "/React-Heroes-App/static/js/main.1cda3733.js.map"
+    "main.5097d631.css.map": "/React-Heroes-App/static/css/main.5097d631.css.map",
+    "main.8d8d1e81.js.map": "/React-Heroes-App/static/js/main.8d8d1e81.js.map"
   },
   "entrypoints": [
-    "static/css/main.3e19605a.css",
-    "static/js/main.1cda3733.js"
+    "static/css/main.5097d631.css",
+    "static/js/main.8d8d1e81.js"
   ]
 }
