@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { heroImgs } from '../../helpers/heroImages';
 
 export const HeroCard = ({
     id,
@@ -9,7 +10,7 @@ export const HeroCard = ({
     characters
 }) => {
 
-    const imagePath = `${process.env.PUBLIC_URL}/assets/${id}.jpg`;
+    const imgPath = heroImgs(`./${id}.jpg`);
 
     return (
         <Link className='cards-link' to={`/hero/${id}`}>
@@ -18,7 +19,7 @@ export const HeroCard = ({
 
                     <div className="row no-gutters">
                         <div className="col-4">
-                            <img src={ imagePath } className="card-img" alt={ superhero } />
+                            <img src={ imgPath } className="card-img" alt={ superhero } />
                         </div>
                         <div className="col-8">
                             <div className="card-body">
@@ -34,9 +35,7 @@ export const HeroCard = ({
                                     <small className='text-muted'>{ first_appearance }</small>
                                 </p>
 
-                                <Link to={`/hero/${id}`}>
-                                    Más...
-                                </Link>
+                                <p>Click para ver más</p>
                                 
                             </div>
                         </div>

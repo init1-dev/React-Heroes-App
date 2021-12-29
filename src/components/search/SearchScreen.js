@@ -59,7 +59,7 @@ export const SearchScreen = () => {
                     </form>
                 </div>
 
-                <div className="col-7 mb-3">
+                <div className="col-7 mb-5">
 
                     {
                         (q.length === 0 )

@@ -1,11 +1,18 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Link, NavLink, useNavigate } from 'react-router-dom'
 
+import { AuthContext } from '../../auth/authContext';
+import { types } from '../../types/types';
+
 export const Navbar = () => {
+
+    const { user, dispatch } = useContext(AuthContext);
     
     const navigate = useNavigate();
 
-    const handleLogout = () => {
+    const handleLogout = () => {        
+        dispatch({ type: types.logout });
+
         navigate('login', {
             replace: true
         });
@@ -15,7 +22,7 @@ export const Navbar = () => {
         <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
             
             <Link 
-                className="navbar-brand" 
+                className="navbar-brand ms-3" 
                 to="/"
             >
                 React-Heroes-App
@@ -48,10 +55,10 @@ export const Navbar = () => {
             </div>
 
             <div className="navbar-collapse collapse w-100 order-3 dual-collapse2 d-flex justify-content-end">
-                <ul className="navbar-nav ml-auto">
+                <ul className="navbar-nav ml-auto me-3">
 
                     <span className="nav-item nav-link text-info">
-                        In1t
+                        { user.name }
                     </span>
 
                     <button
